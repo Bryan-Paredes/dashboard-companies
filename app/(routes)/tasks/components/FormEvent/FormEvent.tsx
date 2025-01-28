@@ -69,6 +69,7 @@ export default function FormEvent(props: FormEventProps) {
       form.setValue("companySelected.id", selectedCompany?.id);
     }
   };
+
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -109,6 +110,7 @@ export default function FormEvent(props: FormEventProps) {
                       {company.name}
                     </SelectItem>
                   ))}
+                  {selectedCompany.name}
                 </SelectContent>
               </Select>
               <FormMessage />
