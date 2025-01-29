@@ -10,7 +10,7 @@ export default async function CompanyIdPage({
 }: {
   params: { companyId: string };
 }) {
-  const { companyId } = await params;
+  const { companyId } = params;
   const userId = (await auth()).userId;
 
   if (!userId) return redirect("/");
