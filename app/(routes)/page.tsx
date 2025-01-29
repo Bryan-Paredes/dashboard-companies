@@ -17,14 +17,14 @@ const dataCardSummary = [
     icon: Waypoints,
     total: "86.5%",
     avarage: 80,
-    title: "Total Revenue",
+    title: "Total Ganancias",
     tooltip: "See all of the Summary",
   },
   {
     icon: BookOpenCheck,
     total: "Q505,62",
     avarage: 30,
-    title: "Bounce Rate",
+    title: "Tasa de Retorno",
     tooltip: "See all of the Bounce Rate",
   },
 ];
