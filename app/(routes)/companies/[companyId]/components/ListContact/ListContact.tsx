@@ -4,6 +4,7 @@ import { Mail, Phone } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { ListContactProps } from "./listContact.types";
 import { auth } from "@clerk/nextjs/server";
+import { Contact } from "@prisma/client";
 
 export default async function ListContact(props: ListContactProps) {
   const { company } = props;
@@ -33,7 +34,7 @@ export default async function ListContact(props: ListContactProps) {
         <p>Role</p>
         <p className="text-right">Contact</p>
       </div>
-      {contacts.map((contact) => (
+      {contacts.map((contact: Contact) => (
         <div key={contact.id}>
           <div className="grid grid-cols-3 gap-x-3 items-center justify-between px-4">
             <p>{contact.name}</p>
