@@ -10,7 +10,7 @@ const dataCardSummary = [
     icon: UsersRound,
     total: "12.450",
     avarage: 12.45,
-    title: "Companies Created",
+    title: "Compañias Creadas",
     tooltip: "See all the companies created",
   },
   {
