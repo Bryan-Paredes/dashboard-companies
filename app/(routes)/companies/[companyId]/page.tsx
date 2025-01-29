@@ -8,9 +8,9 @@ import FooterCompany from "./components/FooterCompany/FooterCompany";
 export default async function CompanyIdPage({
   params,
 }: {
-  params: { companyId: string };
+  params: Promise<{ companyId: string }>;
 }) {
-  const { companyId } = params;
+  const companyId = (await params).companyId;
   const userId = (await auth()).userId;
 
   if (!userId) return redirect("/");
