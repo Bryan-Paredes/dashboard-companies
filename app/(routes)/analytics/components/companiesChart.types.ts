@@ -1,5 +1,4 @@
-import { Company, Event } from "@prisma/client"
-
+import type { Company, Event } from "@prisma/client";
 
 export type CompanyChartProps = {
     companies: Company[],
